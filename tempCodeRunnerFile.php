@@ -3,7 +3,7 @@
 $host = '127.0.0.1';
 $db   = 'papikos_db';
 $user = 'root';
-$pass = ''; // Kosongkan jika menggunakan XAMPP bawaan, atau isi sesuai database Anda
+$pass = ''; 
 
 try {
     $pdo = new PDO("mysql:host=$host;dbname=$db", $user, $pass);
