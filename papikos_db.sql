@@ -2,6 +2,8 @@ SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
 SET time_zone = "+00:00";
 
+SET NAMES utf8mb4;
+
 CREATE TABLE `master_kos` (
   `id_kos` int NOT NULL,
   `nama_kos` varchar(100) NOT NULL,
