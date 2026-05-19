@@ -1,7 +1,6 @@
 <?php include 'koneksi.php'; ?>
 
 <?php
-// index.php - Halaman Pemilihan Akses (Role Selector)
 ?>
 <!DOCTYPE html>
 <html lang="id">
@@ -11,7 +10,6 @@
     <title>PAPIKOS - Selamat Datang</title>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
     <style>
-        /* CSS MURNI - Gaya Estetik & Minimalis Papikos */
         * {
             box-sizing: border-box;
             margin: 0;
@@ -62,14 +60,12 @@
             margin-bottom: 40px;
         }
 
-        /* Grid Pilihan Role */
         .role-grid {
             display: grid;
             grid-template-columns: repeat(3, 1fr);
             gap: 25px;
         }
 
-        /* Card untuk Setiap Role */
         .role-card {
             background: #ffffff;
             border-radius: 16px;
@@ -85,7 +81,6 @@
             cursor: pointer;
         }
 
-        /* Efek Hover Card */
         .role-card:hover {
             transform: translateY(-8px);
             border-color: #00a65b;
@@ -104,7 +99,6 @@
             transition: all 0.3s ease;
         }
 
-        /* Variasi Warna Icon Per Role */
         .admin-box { background-color: #eef2f7; color: #4a5568; }
         .penjual-box { background-color: #e6f6ef; color: #00a65b; }
         .pelanggan-box { background-color: #e0f2fe; color: #0284c7; }
@@ -127,19 +121,18 @@
             text-align: center;
         }
 
-        /* Footer Keterangan Sistem */
         .footer-note {
             margin-top: 50px;
             font-size: 12px;
             color: #a0aec0;
         }
 
-        /* Responsif untuk Layar HP */
         @media (max-width: 768px) {
             .role-grid {
                 grid-template-columns: 1fr;
                 gap: 15px;
             }
+
             .role-card {
                 padding: 25px 20px;
             }
@@ -153,6 +146,7 @@
             <i class="fa-solid fa-house-chimney-window logo-icon"></i>
             <h1 class="logo-text">PAPI<span>KOS</span></h1>
         </div>
+
         <p class="subtitle">Selamat datang! Silakan pilih hak akses Anda untuk masuk ke sistem.</p>
 
         <div class="role-grid">
@@ -161,24 +155,36 @@
                 <div class="role-icon-box admin-box">
                     <i class="fa-solid fa-user-shield"></i>
                 </div>
+
                 <h2 class="role-title">Admin</h2>
-                <p class="role-desc">Mengelola verifikasi berkas kos, meninjau laporan keluhan, dan validasi sistem.</p>
+
+                <p class="role-desc">
+                    Mengelola verifikasi berkas kos, meninjau laporan keluhan, dan validasi sistem.
+                </p>
             </a>
 
             <a href="dashboard_penjual.php" class="role-card">
                 <div class="role-icon-box penjual-box">
                     <i class="fa-solid fa-house-user"></i>
                 </div>
+
                 <h2 class="role-title">Penjual</h2>
-                <p class="role-desc">Mendaftarkan properti kamar, mengatur harga, fasilitas, dan mengelola pesanan sewa.</p>
+
+                <p class="role-desc">
+                    Mendaftarkan properti kamar, mengatur harga, fasilitas, dan mengelola pesanan sewa.
+                </p>
             </a>
 
             <a href="pencari_kos.php" class="role-card">
                 <div class="role-icon-box pelanggan-box">
                     <i class="fa-solid fa-user-astronaut"></i>
                 </div>
+
                 <h2 class="role-title">Pelangan</h2>
-                <p class="role-desc">Mencari kos-kosan impian, memantau ketersediaan kamar, dan melakukan transaksi booking.</p>
+
+                <p class="role-desc">
+                    Mencari kos-kosan impian, memantau ketersediaan kamar, dan melakukan transaksi booking.
+                </p>
             </a>
 
         </div>
